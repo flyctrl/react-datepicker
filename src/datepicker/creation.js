@@ -1,5 +1,11 @@
 /*
 * @Author: chengbs
+* @Date:   2018-04-13 00:06:23
+* @Last Modified by:   chengbs
+* @Last Modified time: 2018-04-13 00:27:09
+*/
+/*
+* @Author: chengbs
 * @Date:   2018-04-11 17:22:40
 * @Last Modified by:   chengbs
 * @Last Modified time: 2018-04-12 10:08:10
@@ -24,7 +30,7 @@ class Calendar extends Component {
     }
   }
   static defaultProps = {
-    rowNumber: 6,
+    rowNumber: 1,
     colNumber: 7
   }
   /**
@@ -203,6 +209,18 @@ class Calendar extends Component {
       firstDay: firstDay
     })
   }
+  /**
+    * 前一周
+  */
+  previousWeek() {
+    console.log('previousWeek')
+  }
+  /**
+    * 后一周
+  */
+  nextWeek() {
+    console.log('nextWeek')
+  }
 
   render() {
     let { rowNumber, colNumber, tags } = this.props
@@ -291,9 +309,11 @@ class Calendar extends Component {
     return (
       <div className='calendar'>
         <div className='calendar-header'>
+          <i className='icon-left-full' onClick={this.previousWeek.bind(this)}></i>
           <i className='icon-left' onClick={this.previousMonth.bind(this)}></i>
           <span>{selectYear} 年 {selectMonth + 1} 月</span>
           <i className='icon-right' onClick={this.nextMonth.bind(this)}></i>
+          <i className='icon-right-full' onClick={this.nextWeek.bind(this)}></i>
         </div>
         <div className='calendar-body'>
           <ul className='c-body-head'>

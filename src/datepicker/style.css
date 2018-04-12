@@ -1,8 +1,8 @@
 /*
 * @Author: baosheng
 * @Date:   2018-04-12 00:08:58
-* @Last Modified by:   baosheng
-* @Last Modified time: 2018-04-12 00:12:49
+* @Last Modified by:   chengbs
+* @Last Modified time: 2018-04-13 00:23:54
 */
 div,ul,li {
     margin: 0;
@@ -44,8 +44,12 @@ a {
 
 .calendar-header>.icon-left:before,
 .calendar-header>.icon-left:after,
+.calendar-header>.icon-left-full:before,
+.calendar-header>.icon-left-full:after,
 .calendar-header>.icon-right:before,
-.calendar-header>.icon-right:after
+.calendar-header>.icon-right:after,
+.calendar-header>.icon-right-full:before,
+.calendar-header>.icon-right-full:after
 {
     content: '';
     position: absolute;
@@ -53,7 +57,9 @@ a {
     left: 0;
 }
 
-.calendar-header>.icon-left:before {
+.calendar-header>.icon-left:before,
+.calendar-header>.icon-left-full:before
+{
     border: 7px solid red;
     border-color: transparent #666 transparent transparent;
     -webkit-transform: translateX(-50%);
@@ -63,7 +69,9 @@ a {
     transform: translateX(-50%);
 }
 
-.calendar-header>.icon-left:after {
+.calendar-header>.icon-left:after,
+.calendar-header>.icon-left-full:after
+{
     border: 7px solid #fff;
     border-color: transparent #fff transparent transparent;
     -webkit-transform: translateX(-40%);
@@ -73,7 +81,18 @@ a {
     transform: translateX(-40%);
 }
 
-.calendar-header>.icon-right:before {
+.calendar-header>.icon-left-full:after {
+    border: none;
+}
+
+.calendar-header>.icon-left-full
+{
+    margin-right: 20px;
+}
+
+.calendar-header>.icon-right:before,
+.calendar-header>.icon-right-full:before
+{
     border: 7px solid red;
     border-color: transparent transparent transparent #666;
     -webkit-transform: translateX(50%);
@@ -83,7 +102,9 @@ a {
     transform: translateX(50%);
 }
 
-.calendar-header>.icon-right:after {
+.calendar-header>.icon-right:after,
+.calendar-header>.icon-right-full:after
+{
     border: 7px solid #fff;
     border-color: transparent transparent transparent #fff;
     -webkit-transform: translateX(40%);
@@ -91,6 +112,16 @@ a {
     -ms-transform: translateX(40%);
     -o-transform: translateX(40%);
     transform: translateX(40%);
+}
+
+.calendar-header>.icon-right-full:after
+{
+    border: none;
+}
+
+.calendar-header>.icon-right-full
+{
+    margin-left: 20px;
 }
 
 .calendar-body>.c-body-head {
