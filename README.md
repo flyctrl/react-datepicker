@@ -6,7 +6,7 @@ npm install / yarn
 npm start
 
 ## 使用方法及配置
-```
+```javascript
 import React, { Component } from 'react'
 import Calendar from './datepicker'
 
@@ -46,29 +46,29 @@ class ShowDatepicker extends Component {
 export default ShowDatepicker
 ```
 #### 选择日期回调
-```
+```javascript
 onSelectDate(year, month, day){
 
 }
 ```
 #### 选择上个月回调
-```
+```javascript
 onPreviousMonth(year, month){
 
 }
 ```
 #### 选择下个月回调
-```
+```javascript
 onNextMonth(year, month){
 
 }
 ```
 #### 高亮'今天'以及选择日期
-```
+```javascript
 year/month/day
 ```
 #### tags动态切换
-```
+```javascript
 tags
 ```
 ## 效果
