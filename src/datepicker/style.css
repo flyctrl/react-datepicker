@@ -2,7 +2,7 @@
 * @Author: baosheng
 * @Date:   2018-04-12 00:08:58
 * @Last Modified by:   chengbs
-* @Last Modified time: 2018-04-13 00:23:54
+* @Last Modified time: 2018-04-25 14:55:17
 */
 div,ul,li {
     margin: 0;
@@ -185,14 +185,14 @@ a {
     text-align: center;
 }
 .content-row>.item-current>a {
-    background-color: #1a85ff;
+    background-color: #02c338;
     color: #fff;
     border-radius: 50%;
     font-size: 12px;
 }
 
 .content-row>.item-active>a {
-    background-color: #31a0c6;
+    background-color: #0697eb;
     color: #fff;
     border-radius: 50%;
 }

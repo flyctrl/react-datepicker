@@ -2,7 +2,7 @@
 * @Author: chengbs
 * @Date:   2018-04-12 10:24:50
 * @Last Modified by:   chengbs
-* @Last Modified time: 2018-04-12 23:35:02
+* @Last Modified time: 2018-04-25 15:30:00
 */
 import React, { Component } from 'react'
 import Calendar from './datepicker'
@@ -16,13 +16,20 @@ class InputShow extends Component {
       isCalendar: true,
       value: ''
     }
+    this.mounted = true
   }
   componentDidMount() {
+    this.mounted = true
     window.addEventListener('click', () => {
-      this.setState({
-        isShow: false
-      })
+      if (this.mounted) {
+        this.setState({
+          isShow: false
+        })
+      }
     })
+  }
+  componentWillUnmount() {
+    this.mounted = false
   }
   selectDate(year, month, day) {
     console.log('选择时间为：' + year + '年' + month + '月' + day + '日')

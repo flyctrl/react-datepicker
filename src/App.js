@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom'
 import ShowDatepicker from './showDatepicker'
 import InputShow from './inputShow'
-import SevenDatepicker from './SevenDatepicker'
 
 const routes = [
   { path: '/',
@@ -15,12 +14,7 @@ const routes = [
     main: ShowDatepicker
   },
   { path: '/InputShow',
-    exact: true,
     main: InputShow
-  },
-  { path: '/SevenDatepicker',
-    exact: true,
-    main: SevenDatepicker
   }
 ]
 
@@ -38,11 +32,10 @@ class App extends Component {
             <ul style={{ listStyleType: 'none', padding: 0 }}>
               <li><NavLink exact to='/' activeStyle={{ color: 'rgb(233, 73, 73)', fontWeight: 'bolder' }}>显示日历</NavLink></li>
               <li><NavLink to='/InputShow' activeStyle={{ color: 'rgb(233, 73, 73)', fontWeight: 'bolder' }}>文本框操作日历</NavLink></li>
-              <li><NavLink to='/SevenDatepicker' activeStyle={{ color: 'rgb(233, 73, 73)', fontWeight: 'bolder' }}>7天日历</NavLink></li>
             </ul>
           </div>
 
-          <div style={{ flex: 1, padding: '10px' }}>
+          <div style={{ flex: 10, padding: '10px' }}>
             <Switch>
               {routes.map((route, index) => (
                 <Route
