@@ -2,8 +2,11 @@
 日历组件,兼容PC端和移动端，支持日历的基本操作
 
 ## 安装方式
+```
 npm install / yarn
+
 npm start
+```
 
 ## 使用方法及配置
 ```javascript
