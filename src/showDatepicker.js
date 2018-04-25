@@ -2,7 +2,7 @@
 * @Author: chengbs
 * @Date:   2018-04-12 10:11:14
 * @Last Modified by:   chengbs
-* @Last Modified time: 2018-04-12 10:11:49
+* @Last Modified time: 2018-04-25 15:47:18
 */
 import React, { Component } from 'react'
 import Calendar from './datepicker'
@@ -11,7 +11,7 @@ class ShowDatepicker extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      tags: []
+      tags: [3, 4, 5, 6]
     }
   }
   selectDate(year, month, day) {
