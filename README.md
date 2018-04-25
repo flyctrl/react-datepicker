@@ -77,4 +77,4 @@ tags
 ## 效果
 ![显示日历](https://github.com/flyctrl/react-datepicker/raw/master/pics/1.jpg)
 
-![文本框操作日历](https://github.com/flyctrl/react-datepicker/raw/master/pics/1.jpg)
+![文本框操作日历](https://github.com/flyctrl/react-datepicker/raw/master/pics/2.jpg)
