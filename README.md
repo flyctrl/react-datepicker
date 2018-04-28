@@ -1,3 +1,5 @@
+![react-datepicker](https://github.com/flyctrl/react-datepicker/raw/master/react-datepicker.png)
+
 ## DatePicker
 日历组件,兼容PC端和移动端，支持日历的基本操作
 
